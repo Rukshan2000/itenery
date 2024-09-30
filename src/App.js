@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useState } from 'react';
+// import LetterTemplate from './components/LetterTemplate';
+// import LetterForm from './components/LetterForm';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// const App = () => {
+//   const [letterData, setLetterData] = useState(null);
+
+//   const generateLetter = (data) => {
+//     setLetterData(data);
+//   };
+
+//   return (
+//     <div className="container mx-auto mt-8">
+//       <LetterForm onSubmit={generateLetter} />
+//       {letterData && <LetterTemplate {...letterData} />}
+//     </div>
+//   );
+// };
+
+// export default App;
+// MyDashboard.jsx
+import React from 'react';
+import Geminai  from './components/Form';
+
+
+const App = () => {
+    return (
+        <div>
+            <Geminai />
+
+        </div>
+    );
+};
 
 export default App;
